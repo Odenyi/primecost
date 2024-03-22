@@ -9,6 +9,259 @@
 		$('#preloader').delay(350).fadeOut('slow');
 		$('body').delay(350).css({'overflow': 'visible'});
 	});
+
+	//load header
+window.onload = function() {
+	//header
+	let headerElement = document.getElementById("header1");
+	
+
+    headerElement.innerHTML = '<header class="header-area-2 header-border">' +
+            '<div class="container-fluid">' +
+            '<div class="row align-items-center">' +
+            '<div class="col-xl-3 col-lg-4 col-md-6 col-6 pl-0">' +
+            '<div class="site-logo">' +
+            '<a href="index.html">' +
+            '<img src="assets/img/logo/logo.png" alt="logo">' +
+            '</a>' +
+            '</div>' +
+            '</div>' +
+            '<div class="col-xl-1 col-lg-3 col-md-3 col-6 d-none d-xl-block d-lg-block">' +
+            '<div class="header-info">' +
+            '<div class="content">' +
+            '<span>Call</span>' +
+            '<a href="tel:+254 705 520 384">+254 705 520 384</a>' +
+            '</div>' +
+            '</div>' +
+            '</div>' +
+            '<div class="col-xl-8 col-lg-5 col-md-6 col-6 d-flex justify-content-end align-items-center pr-15 pr-xl-0">' +
+            '<nav class="main-menu">' +
+            '<ul>' +
+            '<li class="has-children">' +
+            '<a href="index.html">Home</a>' +
+            '</li>' +
+            '<li><a href="team.html">Team</a></li>' +
+            '<li class="has-children">' +
+            '<a href="service-2.html">Services</a>' +
+            '</li>' +
+            '<li class="has-children">' +
+            '<a href="portfolio.html">Portfolio</a>' +
+            '</li>' +
+            '<li class="has-children">' +
+            '<a href="contact.html">Contact Us</a>' +
+            '</li>' +
+            '</ul>' +
+            '</nav>' +
+            '<div class="open-sidebar">' +
+            '<a href="javascript:void(0);">' +
+            '<span></span>' +
+            '</a>' +
+            '</div>' +
+            '<div class="open-mobile-menu">' +
+            '<a href="javascript:void(0);">' +
+            '<i class="far fa-bars"></i>' +
+            '</a>' +
+            '</div>' +
+            '</div>' +
+            '</div>' +
+            '</div>' +
+            '</header>'+
+			'<aside class="slide-bar">' +
+            '<div class="close-mobile-menu">' +
+            '<a href="javascript:void(0);"><i class="fas fa-times"></i></a>' +
+            '</div>' +
+            '<nav class="side-mobile-menu">' +
+            '<ul id="mobile-menu-active">' +
+            '<li>' +
+            '<a href="index.html">Home</a>' +
+            '</li>' +
+            '<li><a href="team.html">Team</a></li>' +
+            '<li>' +
+            '<a href="service-2.html">Services</a>' +
+            '</li>' +
+            '<li>' +
+            '<a href="portfolio.html">Portfolio</a>' +
+            '</li>' +
+            '<li>' +
+            '<a href="contact.html">Contact Us</a>' +
+            '</li>' +
+            '</ul>' +
+            '</nav>' +
+            '<div class="sidebar-widget-wrapper">' +
+            '<!-- start side widget -->' +
+            '<div class="sidebar-widget logo-side">' +
+            '<a href="index.html">' +
+            '<img src="assets/img/logo/logo.png" alt="logo">' +
+            '</a>' +
+            '</div>' +
+            '<div class="sidebar-widget">' +
+            '<div class="info-wdget">' +
+            '<h4 class="widget-title">Office Address</h4>' +
+            '<p>' +
+            'G4 SUITE, GROUND FLOOR, KAREN PROFESSIONAL CENTRE, KAREN ROAD' +
+            '</p>' +
+            '</div>' +
+            '</div>' +
+            '<div class="sidebar-widget">' +
+            '<div class="info-wdget">' +
+            '<h4 class="widget-title">Phone Number</h4>' +
+            '<p> +254 705 520 384 </p>' +
+            '<p> +254 722 912 432 </p>' +
+            '</div>' +
+            '</div>' +
+            '<div class="sidebar-widget">' +
+            '<div class="info-wdget">' +
+            '<h4 class="widget-title">Email Address</h4>' +
+            '<p> <a href="#"><span class="__cf_email__" data-cfemail="85ccebe3eac5e6eaebf6f1e0f7abe6eae8">info@Primecost-qs.com</span></a> </p>' +
+            '</div>' +
+            '</div>' +
+            '<div class="sidebar-widget">' +
+            '<div class="social-widget">' +
+            '<a href="#">' +
+            '<i class="fab fa-facebook-f"></i>' +
+            '</a>' +
+            '<a href="#">' +
+            '<i class="fab fa-twitter"></i>' +
+            '</a>' +
+            '<a href="#">' +
+            '<i class="fab fa-google-plus-g"></i>' +
+            '</a>' +
+            '<a href="#">' +
+            '<i class="fab fa-instagram"></i>' +
+            '</a>' +
+            '</div>' +
+            '</div>' +
+            '</div>' +
+            '</aside>';
+
+			var footerPlaceholder = document.getElementById("footer1");
+
+            // Generate footer HTML
+            footerPlaceholder.innerHTML = '<footer class="footer-area">' +
+                '<div class="container">' +
+                '<div class="row">' +
+                '<div class="col-xl-6 col-lg-6 col-md-6">' +
+                '<div class="footer-logo mb-xs-30">' +
+                '<a href="index.html"><img src="assets/img/logo/logo-dark.png" alt="logo"></a>' +
+                '</div>' +
+                '</div>' +
+                '<div class="col-xl-6 col-lg-6 col-md-6">' +
+                '<div class="footer-social">' +
+                '<a href="#"><i class="fab fa-facebook-f"></i></a>' +
+                '<a href="#"><i class="fab fa-twitter"></i></a>' +
+                '<a href="#"><i class="fab fa-google-plus-g"></i></a>' +
+                '<a href="#"><i class="fab fa-dribbble"></i></a>' +
+                '<a href="#"><i class="fab fa-pinterest-p"></i></a>' +
+                '</div>' +
+                '</div>' +
+                '<div class="col-xl-12">' +
+                '<div class="footer-separator mt-60 mb-60"></div>' +
+                '</div>' +
+                '</div>' +
+                '<div class="row">' +
+                '<div class="col-xl-6 col-lg-6 col-md-6">' +
+                '<div class="footer-widget">' +
+                '<h3 class="widget-title">' +
+                'Contact' +
+                '</h3>' +
+                '<div class="content-widget">' +
+                '<ul>' +
+                '<li>' +
+                '<span class="icon">' +
+                '<img src="assets/img/icon/map.png" alt="icon">' +
+                '</span>' +
+                '<a href="#">' +
+                'G4 SUITE, GROUND FLOOR, KAREN PROFESSIONAL CENTRE, KAREN ROAD' +
+                '</a>' +
+                '</li>' +
+                '<li>' +
+                '<span class="icon">' +
+                '<img src="assets/img/icon/call.png" alt="icon">' +
+                '</span>' +
+                '<a href="#">+254 705 520 384 </a>' +
+                '<a href="#">+254 722 912 432</a>' +
+                '</li>' +
+                '<li>' +
+                '<span class="icon">' +
+                '<img src="assets/img/icon/email.png" alt="icon">' +
+                '</span>' +
+                '<a href="#"><span class="__cf_email__" data-cfemail="85ccebe3eac5e6eaebf6f1e0f7abe6eae8">inf0@Primecost-qs.com</span></a>' +
+                '</li>' +
+                '</ul>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '<div class="col-xl-6 col-lg-6 col-md-6">' +
+                '<div class="footer-widget">' +
+                '<h3 class="widget-title">' +
+                'News Feeds' +
+                '</h3>' +
+                '<div class="recent-posts">' +
+                '<ul>' +
+                '<li>' +
+                '<div class="recent-thumb">' +
+                '<a href="#">' +
+                '<img alt="recent-post-1" src="assets/img/thumb/thumb-5.png">' +
+                '</a>' +
+                '</div>' +
+                '<div class="recent-details">' +
+                '<h4><a href="#">Amazing Standard Post</a></h4>' +
+                '<span>26 May, 2020</span>' +
+                '</div>' +
+                '</li>' +
+                '<li>' +
+                '<div class="recent-thumb">' +
+                '<a href="#">' +
+                '<img alt="recent-post-1" src="assets/img/thumb/thumb-6.png">' +
+                '</a>' +
+                '</div>' +
+                '<div class="recent-details">' +
+                '<h4><a href="#">Amazing Text Post</a></h4>' +
+                '<span>26 May, 2020</span>' +
+                '</div>' +
+                '</li>' +
+                '<li>' +
+                '<div class="recent-thumb">' +
+                '<a href="#">' +
+                '<img alt="recent-post-1" src="assets/img/thumb/thumb-7.png">' +
+                '</a>' +
+                '</div>' +
+                '<div class="recent-details">' +
+                '<h4><a href="#">Amazing Video Post</a></h4>' +
+                '<span>26 May, 2020</span>' +
+                '</div>' +
+                '</li>' +
+                '</ul>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '<div class="col-xl-12">' +
+                '<div class="footer-separator mt-30 mb-60"></div>' +
+                '</div>' +
+                '</div>' +
+                '<div class="row pb-60">' +
+                '<div class="col-xl-6 col-lg-6">' +
+                '<div class="copyright mb-md-30 mb-xs-30">' +
+                '©2024 CopyRight Example. All rights reserved.' +
+                '</div>' +
+                '</div>' +
+                '<div class="col-xl-6 col-lg-6">' +
+                '<div class="footer-menu">' +
+                '<ul>' +
+                '<li><a href="index.html">Home</a></li>' +
+                '<li><a href="#">About</a></li>' +
+                '<li><a href="#">Blog</a></li>' +
+                '<li><a href="#">Contact</a></li>' +
+                '</ul>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '</footer>';
+
+          
+}
+
 	
 	/*------------------------------------
 		Mobile Menu
