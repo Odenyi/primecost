@@ -533,7 +533,7 @@ label {
   left: 0;
 }
 .close-mobile-menu a:hover {
-  color: #ff0000;
+  color: #88b94f;
 }
 
 .on-side {
@@ -3815,7 +3815,7 @@ label {
   right: 20px;
   bottom: 20px;
   text-align: center;
-  background: rgba(255, 94, 16, 0.8);
+  background: rgba(136, 185, 79, 0.8);
   visibility: hidden;
   opacity: 0;
   -webkit-transition: all 0.3s linear 0s;
