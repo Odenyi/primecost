@@ -22,7 +22,7 @@ window.onload = function() {
             '<div class="col-xl-3 col-lg-4 col-md-6 col-6 pl-0">' +
             '<div class="site-logo">' +
             '<a href="index.html">' +
-            '<img src="assets/img/logo/logo.png" alt="logo">' +
+            '<img src="assets/img/logo/logo.jpg" alt="logo">' +
             '</a>' +
             '</div>' +
             '</div>' +
@@ -142,7 +142,6 @@ window.onload = function() {
                 '<div class="row">' +
                 '<div class="col-xl-6 col-lg-6 col-md-6">' +
                 '<div class="footer-logo mb-xs-30">' +
-                '<a href="index.html"><img src="assets/img/logo/logo-dark.png" alt="logo"></a>' +
                 '</div>' +
                 '</div>' +
                 '<div class="col-xl-6 col-lg-6 col-md-6">' +
@@ -191,50 +190,50 @@ window.onload = function() {
                 '</div>' +
                 '</div>' +
                 '</div>' +
-                '<div class="col-xl-6 col-lg-6 col-md-6">' +
-                '<div class="footer-widget">' +
-                '<h3 class="widget-title">' +
-                'News Feeds' +
-                '</h3>' +
-                '<div class="recent-posts">' +
-                '<ul>' +
-                '<li>' +
-                '<div class="recent-thumb">' +
-                '<a href="#">' +
-                '<img alt="recent-post-1" src="assets/img/thumb/thumb-5.png">' +
-                '</a>' +
-                '</div>' +
-                '<div class="recent-details">' +
-                '<h4><a href="#">Amazing Standard Post</a></h4>' +
-                '<span>26 May, 2020</span>' +
-                '</div>' +
-                '</li>' +
-                '<li>' +
-                '<div class="recent-thumb">' +
-                '<a href="#">' +
-                '<img alt="recent-post-1" src="assets/img/thumb/thumb-6.png">' +
-                '</a>' +
-                '</div>' +
-                '<div class="recent-details">' +
-                '<h4><a href="#">Amazing Text Post</a></h4>' +
-                '<span>26 May, 2020</span>' +
-                '</div>' +
-                '</li>' +
-                '<li>' +
-                '<div class="recent-thumb">' +
-                '<a href="#">' +
-                '<img alt="recent-post-1" src="assets/img/thumb/thumb-7.png">' +
-                '</a>' +
-                '</div>' +
-                '<div class="recent-details">' +
-                '<h4><a href="#">Amazing Video Post</a></h4>' +
-                '<span>26 May, 2020</span>' +
-                '</div>' +
-                '</li>' +
-                '</ul>' +
-                '</div>' +
-                '</div>' +
-                '</div>' +
+                // '<div class="col-xl-6 col-lg-6 col-md-6">' +
+                // '<div class="footer-widget">' +
+                // '<h3 class="widget-title">' +
+                // 'News Feeds' +
+                // '</h3>' +
+                // '<div class="recent-posts">' +
+                // '<ul>' +
+                // '<li>' +
+                // '<div class="recent-thumb">' +
+                // '<a href="#">' +
+                // '<img alt="recent-post-1" src="assets/img/thumb/thumb-5.png">' +
+                // '</a>' +
+                // '</div>' +
+                // '<div class="recent-details">' +
+                // '<h4><a href="#">Amazing Standard Post</a></h4>' +
+                // '<span>26 May, 2020</span>' +
+                // '</div>' +
+                // '</li>' +
+                // '<li>' +
+                // '<div class="recent-thumb">' +
+                // '<a href="#">' +
+                // '<img alt="recent-post-1" src="assets/img/thumb/thumb-6.png">' +
+                // '</a>' +
+                // '</div>' +
+                // '<div class="recent-details">' +
+                // '<h4><a href="#">Amazing Text Post</a></h4>' +
+                // '<span>26 May, 2020</span>' +
+                // '</div>' +
+                // '</li>' +
+                // '<li>' +
+                // '<div class="recent-thumb">' +
+                // '<a href="#">' +
+                // '<img alt="recent-post-1" src="assets/img/thumb/thumb-7.png">' +
+                // '</a>' +
+                // '</div>' +
+                // '<div class="recent-details">' +
+                // '<h4><a href="#">Amazing Video Post</a></h4>' +
+                // '<span>26 May, 2020</span>' +
+                // '</div>' +
+                // '</li>' +
+                // '</ul>' +
+                // '</div>' +
+                // '</div>' +
+                // '</div>' +
                 '<div class="col-xl-12">' +
                 '<div class="footer-separator mt-30 mb-60"></div>' +
                 '</div>' +
@@ -242,16 +241,17 @@ window.onload = function() {
                 '<div class="row pb-60">' +
                 '<div class="col-xl-6 col-lg-6">' +
                 '<div class="copyright mb-md-30 mb-xs-30">' +
-                '©2024 CopyRight Example. All rights reserved.' +
+                '©2024 Copyright. All rights reserved.' +
                 '</div>' +
                 '</div>' +
                 '<div class="col-xl-6 col-lg-6">' +
                 '<div class="footer-menu">' +
                 '<ul>' +
                 '<li><a href="index.html">Home</a></li>' +
-                '<li><a href="#">About</a></li>' +
-                '<li><a href="#">Blog</a></li>' +
-                '<li><a href="#">Contact</a></li>' +
+                '<li><a href="team.html">Team</a></li>' +
+                '<li><a href="service-2.html">Services</a></li>' +
+				'<li><a href="portfolio.html">Portfolio</a></li>' +
+                '<li><a href="contact.html">Contact</a></li>' +
                 '</ul>' +
                 '</div>' +
                 '</div>' +
