@@ -91,58 +91,44 @@
 	<div class="service-area pt-120 pb-90">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-4 col-lg-4 col-md-6">
+				<div class="col-xl-6 col-lg-6 col-md-6">
 					<div class="service-wrap-4 mb-30">
 						<div class="service-thumb">
 							<img src="assets/img/vector/vector-1.png" alt="vector">
 							<span class="service-num">01</span>
 						</div>
 						<div class="service-details">
-							<h4><a href="service-2.html">PROJECT MANAGEMENT</a></h4>
+							<h4><a href="servicedetailid">PROJECT MANAGEMENT</a></h4>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
 							</p>
-							<a href="service-2.html" class="read-more"><i class="far fa-plus"></i> Read More</a>
+							<a href="#servicedetailid" class="read-more toggle-btn" data-target="service-1" ><i class="far fa-plus"></i> Read More</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-xl-4 col-lg-4 col-md-6">
+				<div class="col-xl-6 col-lg-6 col-md-6">
 					<div class="service-wrap-4 mb-30">
 						<div class="service-thumb">
 							<img src="assets/img/vector/vector-2.png" alt="vector">
 							<span class="service-num">02</span>
 						</div>
 						<div class="service-details">
-							<h4><a href="service-2.html">Plumbilg Services</a></h4>
+							<h4><a href="servicedetailid">Plumbilg Services</a></h4>
 							<p>
 								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
 							</p>
-							<a href="service-2.html" class="read-more"><i class="far fa-plus"></i> Read More</a>
+							<a href="#servicedetailid" class="read-more toggle-btn" data-target="service-2"><i class="far fa-plus"></i> Read More</a>
 						</div>
 					</div>
 				</div>
-				<div class="col-xl-4 col-lg-4 col-md-6">
-					<div class="service-wrap-4 mb-30">
-						<div class="service-thumb">
-							<img src="assets/img/vector/vector-3.png" alt="vector">
-							<span class="service-num">03</span>
-						</div>
-						<div class="service-details">
-							<h4><a href="service-2.html">Building Repair</a></h4>
-							<p>
-								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
-							</p>
-							<a href="service-2.html" class="read-more"><i class="far fa-plus"></i> Read More</a>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</div>
 	<!--    Service Area End    -->
 
 	<!--    Service Area 2 Start   -->
-	<div class="service-area bg-cover pt-120 pb-90" style="background-image: url(assets/img/bg/service-bg-1.jpg)">
+	<div class="service-area bg-cover pt-120 pb-90 style="background-image: url(assets/img/bg/service-bg-1.jpg)">
 		<div class="container">
 			<div class="row">
 				<div class="col-xl-10">
@@ -202,6 +188,50 @@
 		</div>
 	</div>
 	<!--    Service Area 2 End    -->
+
+
+	<!--    more on services start  -->
+	<div class="service-area pt-120 pb-90 service-div" id = "servicedetailid">
+		<div class="container">
+			<div class="row service" id="service-1">
+				<div class="col-xl-12 col-lg-12 col-md-12">
+					<div class="service-wrap-4 mb-30">
+						<div class="service-thumb">
+							<img src="assets/img/vector/vector-1.png" alt="vector">
+							<span class="service-num">01</span>
+						</div>
+						<div class="service-details">
+							<h4><a href="service-2.html">PROJECT MANAGEMENT</a></h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.jkdhfjhkdfhknihguhfdgkjfdhkgjfiudhgiufdshgfdgufhkgjfhbhguiyurfyugyuifhgiou409u934uru3409
+							</p>
+							<a href="service-2.html" class="read-more"><i class="far fa-plus"></i> Read More</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="row service" id="service-2">
+				<div class="col-xl-12 col-lg-12 col-md-12">
+					<div class="service-wrap-4 mb-30">
+						<div class="service-thumb">
+							<img src="assets/img/vector/vector-2.png" alt="vector">
+							<span class="service-num">02</span>
+						</div>
+						<div class="service-details">
+							<h4><a href="service-2.html">Plumbilg Services</a></h4>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.
+							</p>
+							<a href="service-2.html" class="read-more"><i class="far fa-plus"></i> Read More</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<!--     more on services start  End    -->
 
 	<!--    Brand Area Start   -->
 	<div class="brand-area bg-theme pt-90 pb-90">
@@ -268,6 +298,30 @@
 <script src="assets/js/imagesloaded.pkgd.min.js"></script>
 <script src="assets/js/isotope.pkgd.min.js"></script>
 <script src="assets/js/script.js"></script>
+<script>
+	document.querySelectorAll('.toggle-btn').forEach(button => {
+        button.addEventListener('click', function() {
+			document.querySelectorAll('.service-div').forEach(member => {
+                member.style.display = 'block';
+         });
+            // Hide all team members
+            document.querySelectorAll('.service').forEach(member => {
+                member.style.display = 'none';
+            });
+
+            // Show the selected team member
+            const targetId = this.getAttribute('data-target');
+            const targetMember = document.getElementById(targetId);
+            if (targetMember) {
+                targetMember.style.display = 'block';
+            }
+        });
+    });
+	// Hide all team members
+	document.querySelectorAll('.service-div').forEach(member => {
+                member.style.display = 'none';
+         });
+</script>
 </body>
 
 </html>
