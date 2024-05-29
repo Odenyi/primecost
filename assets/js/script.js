@@ -135,8 +135,8 @@ window.onload = function() {
             '</aside>';
 
 			let whatsapp = document.getElementById("whatsapp");
-			whatsapp.innerHTML = ' <a href="https://api.whatsapp.com/send?phone=+254792126894" class="float" target="_blank" >' +
-			'<i class="fa fa-whatsapp my-float"></i> '+
+			whatsapp.innerHTML = ' <a href="https://wa.me/+254705520384" class="float" target="_blank" >' +
+			'<i class="fab fa-whatsapp my-float"></i> '+
 			'</a>'
 
 			var footerPlaceholder = document.getElementById("footer1");
