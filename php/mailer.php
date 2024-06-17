@@ -1,7 +1,7 @@
 <?php
 
-require '../vendor/autoload.php'; // Include PHPMailer library
-require '../utils/utils.php';
+require 'vendor/autoload.php'; // Include PHPMailer library
+require 'utils/utils.php';
 // require 'dbconnect.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
@@ -16,6 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name = $_POST["name"];
     $email = $_POST["email"];
     $message = $_POST["message"];
+   
     if ($name == "" || $email ==""  || $message == ""){
         echo "Please fill in all the requirements ";
        
@@ -41,11 +42,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $messagetosend = "Greetings,<br>You have received a message from prime-costqs.com Contact Form. Here is some information about the client:<br>"
         . "name: {$name},<br>"
         . "email: {$email}<br>"
-        . "and the message is:<br>'{$message}'<br><br>Regards,<br>Bria";
+        . "and the message is:<br>'{$message}'<br><br>Regards,<br>Prime Cost QS";
 
-        $client_message = "Dear {$name},<br><br>Thank you for contacting Prime Cost Limited. Your request has been received and you be contacted soon should you have any question or clarification do not hesitate to contact {$emailfrom} or {$recipients[0]['phone']}. <br><br>Regards,<br>Brian Odenyi.";
+        $client_message = "Dear {$name},<br><br>Thank you for contacting Prime Cost Limited. Your request has been received and you be contacted soon should you have any question or clarification do not hesitate to contact {$recipients[0]['email']} or {$recipients[0]['phone']}. <br><br>Regards,<br>Primecost Limited.";
 
-        $sendsms = "You have a new message from prime-costqs.com Contact Form.name: {$name},phone: {$phone}";
+        //$sendsms = "You have a new message from prime-costqs.com Contact Form.name: {$name},phone: {$phone}";
         
         $client_email = trim($email);
        
